@@ -14,7 +14,7 @@ root.render(
     <Router>
       <div className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
-          <Link className="navbar-brand" to="/">我的網站</Link>
+          <Link className="navbar-brand" to="/static-login-main">我的網站</Link>
           <div>
             <Link className="btn btn-outline-light m-2" to="/profile">註冊</Link>
             <Link className="btn btn-outline-light m-2" to="/login">登入</Link>
@@ -22,7 +22,7 @@ root.render(
         </div>
       </div>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/static-login-main" element={<App />} />
         <Route path="/profile" element={<Profile  />} />
         <Route path="/login" element={<Login />} />
         {/* <Route path="/dashboard" element={currentUser ? <Dashboard  /> : <Login />} /> */}
